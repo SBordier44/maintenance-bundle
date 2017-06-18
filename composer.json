@@ -1,0 +1,58 @@
+{
+    "name": "nuboxdevcom/maintenance-bundle",
+    "description": "Maintenance bundle for Symfony 3.3.x",
+    "license": "MIT",
+    "keywords": [
+        "symfony",
+        "bundle",
+        "3.3",
+        "nubox",
+        "nuboxdevcom",
+        "maintenance"
+    ],
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/nuboxdevcom/maintenance-bundle",
+    "support": {
+        "issues": "https://github.com/nuboxdevcom/maintenance-bundle/issues",
+        "source": "https://github.com/nuboxdevcom/maintenance-bundle",
+        "docs": "https://github.com/nuboxdevcom/maintenance-bundle/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "NuBOX DevCom",
+            "email": "slye@nubox.fr",
+            "homepage": "https://github.com/nuboxdevcom",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/nuboxdevcom/maintenance-bundle"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "symfony/framework-bundle": "~3.3",
+        "twig/twig": "~2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "NDC\\": "NDC/"
+        }
+    },
+    "conflict": {
+        "symfony/framework-bundle": "< 3.3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "classmap-authoritative": true
+    }
+}
