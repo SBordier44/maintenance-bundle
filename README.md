@@ -60,7 +60,7 @@ If you want to know if maintenance is enabled from a controller, use this method
 > **isMaintenanceMode()** return boolean.
 
 ## How to change the view
-If you want to change the view, create a new view named maintenance.html.twig in the 
+If you want to change the view, create a new view named **maintenance.html.twig** in the 
 ```bash
     app/Resources/NDCMaintenanceBundle/views/
 ```
