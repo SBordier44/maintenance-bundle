@@ -25,11 +25,6 @@
             "role": "Developer"
         }
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
-    },
     "repositories": [
         {
             "type": "git",
