@@ -1,4 +1,11 @@
 # Intro to MaintenanceBundle
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/2ed013da-a349-4147-b4d1-c142eb38d290/big.png)](https://insight.sensiolabs.com/projects/2ed013da-a349-4147-b4d1-c142eb38d290)
+
+[![License](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/license?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+[![Total Downloads](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/downloads?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+[![Latest Stable Version](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/v/stable?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/v/unstable?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+
 
 ## Requirements:
 - PHP `>=7.1.*`
