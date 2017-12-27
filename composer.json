@@ -1,14 +1,14 @@
 {
     "name": "nuboxdevcom/maintenance-bundle",
-    "description": "Maintenance bundle for Symfony 3.3.x",
+    "description": "Maintenance bundle for Symfony 3.4.x",
     "license": "MIT",
     "keywords": [
         "symfony",
         "bundle",
-        "3.3",
         "nubox",
         "nuboxdevcom",
-        "maintenance"
+        "maintenance",
+        "maintenance-bundle"
     ],
     "type": "symfony-bundle",
     "homepage": "https://github.com/nuboxdevcom/maintenance-bundle",
@@ -17,24 +17,20 @@
         "source": "https://github.com/nuboxdevcom/maintenance-bundle",
         "docs": "https://github.com/nuboxdevcom/maintenance-bundle/blob/master/README.md"
     },
-    "authors": [
-        {
-            "name": "NuBOX DevCom",
-            "email": "slye@nubox.fr",
-            "homepage": "https://github.com/nuboxdevcom",
-            "role": "Developer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/nuboxdevcom/maintenance-bundle"
-        }
-    ],
+    "authors": [{
+        "name": "NuBOX DevCom",
+        "email": "slye@nubox.fr",
+        "homepage": "https://github.com/nuboxdevcom",
+        "role": "Developer"
+    }],
+    "repositories": [{
+        "type": "git",
+        "url": "https://github.com/nuboxdevcom/maintenance-bundle"
+    }],
     "require": {
-        "php": ">=7.1.0",
-        "symfony/framework-bundle": "~3.3",
-        "twig/twig": "~2.4"
+        "php": ">=7.1",
+        "symfony/framework-bundle": "^3.4",
+        "twig/twig": "^2.4"
     },
     "autoload": {
         "psr-4": {
@@ -42,7 +38,7 @@
         }
     },
     "conflict": {
-        "symfony/framework-bundle": "< 3.3.0"
+        "symfony/framework-bundle": "< 3.3"
     },
     "config": {
         "optimize-autoloader": true,
