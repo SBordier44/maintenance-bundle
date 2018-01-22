@@ -7,10 +7,10 @@
 [![Latest Unstable Version](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/v/unstable?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
 
 
-## Requirements:
+## Requirements
 - PHP `>=7.1.*`
-- symfony/framework-bundle `<=4.1`
-- Twig `>=2.*`
+- symfony/framework-bundle `< 4.0`
+- Twig `^2.*`
 
 ## Installation and configuration:
 
@@ -19,7 +19,7 @@ Pretty simple with [Composer](http://packagist.org), run:
 composer require nuboxdevcom/maintenance-bundle
 ```
 
-### Add MaintenanceBundle to your application kernel (Symfony 3.x)
+### Add MaintenanceBundle to your application kernel
 ```php
 // app/AppKernel.php
 public function registerBundles()
@@ -31,7 +31,7 @@ public function registerBundles()
 }
 ```
 
-### Simply Configuration (Symfony 3.x)
+### Simply Configuration
 
 Enter your IPs here to allow you to access your site during a maintenance.
 ```yaml
@@ -66,7 +66,7 @@ If you want to know if maintenance is enabled from a controller, use this method
 ```
 > **isMaintenanceMode()** return boolean.
 
-## How to change the view (Symfony 3.x)
+## How to change the view
 If you want to change the view, create a new view named **maintenance.html.twig** in the 
 ```bash
     app/Resources/NDCMaintenanceBundle/views/
