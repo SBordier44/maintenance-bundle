@@ -7,10 +7,10 @@ services:
 
     maintenance.service:
         class: NDC\MaintenanceBundle\Service\MaintenanceManager
-        arguments: ['@service_container']
+        arguments: ['%kernel.root_dir%']
 
     maintenance.twig_extension:
         class: NDC\MaintenanceBundle\Twig\AppExtension
-        arguments: ['@service_container']
+        arguments: ['%kernel.root_dir%']
         tags:
             - { name: twig.extension }

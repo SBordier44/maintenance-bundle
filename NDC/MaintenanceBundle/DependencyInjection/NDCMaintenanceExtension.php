@@ -15,11 +15,9 @@ class NDCMaintenanceExtension extends Extension
         $config        = $this->processConfiguration($configuration, $configs);
         $loader        = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
-        if(array_key_exists('authorized_ips', $config))
-        {
+        if (array_key_exists('authorized_ips', $config)) {
             $container->getDefinition('maintenance.service')->addMethodCall('setConfig', [$config['authorized_ips']]);
-        } else
-        {
+        } else {
             $container->getDefinition('maintenance.service')->addMethodCall('setConfig', []);
         }
         

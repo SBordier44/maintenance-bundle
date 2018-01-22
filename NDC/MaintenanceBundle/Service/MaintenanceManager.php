@@ -2,45 +2,40 @@
 
 namespace NDC\MaintenanceBundle\Service;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
-
 class MaintenanceManager
 {
-    /**
-     * @var ContainerInterface
-     */
-    private $container;
-    
     /**
      * @var array
      */
     private $config = [];
+    /**
+     * @var string
+     */
+    private $kernelRoot;
     
-    public function __construct(ContainerInterface $container)
+    public function __construct(string $kernelRoot)
     {
-        $this->container = $container;
+        $this->kernelRoot = $kernelRoot;
     }
     
     public function enableMaintenanceAction(): bool
     {
-        $file = $this->container->getParameter('kernel.root_dir') . '/../var/maintenance.lock';
-        if(!file_exists($file))
-        {
+        $file = $this->kernelRoot . '/../var/maintenance.lock';
+        if (!file_exists($file)) {
             touch($file);
-            return TRUE;
+            return true;
         }
-        return FALSE;
+        return false;
     }
     
     public function disableMaintenanceAction(): bool
     {
-        $file = $this->container->getParameter('kernel.root_dir') . '/../var/maintenance.lock';
-        if(file_exists($file))
-        {
+        $file = $this->kernelRoot . '/../var/maintenance.lock';
+        if (file_exists($file)) {
             unlink($file);
-            return TRUE;
+            return true;
         }
-        return FALSE;
+        return false;
     }
     
     public function getConfig(): array

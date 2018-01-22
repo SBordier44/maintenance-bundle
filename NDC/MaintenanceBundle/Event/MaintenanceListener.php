@@ -33,10 +33,13 @@ class MaintenanceListener
     {
         $clientIps     = $event->getRequest()->getClientIps();
         $authorizedIps = $this->maintenanceService->getConfig();
-        if(!file_exists($this->path)) return;
-        foreach($clientIps as $clientIp)
-        {
-            if(in_array($clientIp, $authorizedIps, FALSE)) return;
+        if (!file_exists($this->path)) {
+            return;
+        }
+        foreach ($clientIps as $clientIp) {
+            if (\in_array($clientIp, $authorizedIps, false)) {
+                return;
+            }
         }
         $view = $this->twig->render('@NDCMaintenance/maintenance.html.twig');
         $event->setResponse(new Response($view, Response::HTTP_SERVICE_UNAVAILABLE));

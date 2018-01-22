@@ -2,20 +2,19 @@
 
 namespace NDC\MaintenanceBundle\Twig;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Twig_Extension;
 use Twig_SimpleFunction;
 
 class AppExtension extends Twig_Extension
 {
     /**
-     * @var ContainerInterface
+     * @var string
      */
-    private $container;
+    private $kernelRoot;
     
-    public function __construct(ContainerInterface $container)
+    public function __construct(string $kernelRoot)
     {
-        $this->container = $container;
+        $this->kernelRoot = $kernelRoot;
     }
     
     public function getFunctions(): array
@@ -27,7 +26,7 @@ class AppExtension extends Twig_Extension
     
     public function isMaintenanceMode(): bool
     {
-        $file = $this->container->getParameter('kernel.root_dir') . '/../var/maintenance.lock';
-        return (bool)file_exists($file);
+        $file = $this->kernelRoot . '/../var/maintenance.lock';
+        return file_exists($file);
     }
 }
