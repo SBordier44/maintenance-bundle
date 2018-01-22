@@ -1,6 +1,6 @@
 {
     "name": "nuboxdevcom/maintenance-bundle",
-    "description": "Maintenance bundle for Symfony 3.x <=> 4.x",
+    "description": "Maintenance bundle for Symfony 3.3.x <=> 4.0.x",
     "license": "MIT",
     "keywords": [
         "symfony",
