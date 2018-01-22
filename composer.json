@@ -1,6 +1,6 @@
 {
     "name": "nuboxdevcom/maintenance-bundle",
-    "description": "Maintenance bundle for Symfony 3.4.x",
+    "description": "Maintenance bundle for Symfony 3.x <=> 4.x",
     "license": "MIT",
     "keywords": [
         "symfony",
@@ -28,8 +28,8 @@
         "url": "https://github.com/nuboxdevcom/maintenance-bundle"
     }],
     "require": {
-        "php": ">=7.1",
-        "symfony/framework-bundle": "^3.4",
+        "php": ">=7.0",
+        "symfony/framework-bundle": "<=4.1",
         "twig/twig": "^2.4"
     },
     "autoload": {
@@ -43,7 +43,6 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
-        "classmap-authoritative": true
+        "sort-packages": true
     }
 }
