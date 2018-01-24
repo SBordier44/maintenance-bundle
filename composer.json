@@ -32,13 +32,13 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": "^7.1",
         "symfony/framework-bundle": "^3.4|^4.0",
         "symfony/twig-bundle": "^3.4|^4.0",
         "symfony/templating": "^3.4|^4.0",
         "symfony/asset": "^3.4|^4.0",
         "symfony/yaml": "^3.4|^4.0",
-        "twig/twig": "^3.4|^4.0"
+        "twig/twig": "^2.4"
     },
     "autoload": {
         "psr-4": {
