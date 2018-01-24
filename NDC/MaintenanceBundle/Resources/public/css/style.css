@@ -115,7 +115,7 @@ body {
 
 .wrap {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .content {
@@ -192,7 +192,7 @@ form {
     line-height: 1.8em;
     text-align: center;
     margin-top: 1em;
-    text-shadow: 0 1px 0px rgba(255, 250, 250, 0.09);
+    text-shadow: 0 1px 0 rgba(255, 250, 250, 0.09);
 }
 
 .footer p.a a {
@@ -239,7 +239,7 @@ form {
     vertical-align: middle;
     margin-left: -67px;
     text-indent: -9999px;
-    margin-top: 2.8px;
+    margin-top: 3px;
     outline: none;
     width: 42px;
     height: 14px;
@@ -364,7 +364,7 @@ button span:hover {
     }
 
     .grid p {
-        margin-top: 0em;
+        margin-top: 0;
     }
 
     .grid p img {
@@ -418,7 +418,7 @@ button span:hover {
 
     .content-grid {
         text-align: center;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 
     .grid {

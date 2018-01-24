@@ -1,6 +1,6 @@
 <?php
 
-namespace NDC\MaintenanceBundle\Event;
+namespace NDC\MaintenanceBundle\EventListener;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;

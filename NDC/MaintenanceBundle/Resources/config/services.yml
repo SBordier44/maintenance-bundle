@@ -1,16 +1,19 @@
 services:
     maintenance.listener:
-        class: NDC\MaintenanceBundle\Event\MaintenanceListener
+        class: NDC\MaintenanceBundle\EventListener\MaintenanceListener
         arguments: ['%kernel.root_dir%', '@twig', '@maintenance.service']
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+        public: true
 
     maintenance.service:
         class: NDC\MaintenanceBundle\Service\MaintenanceManager
         arguments: ['%kernel.root_dir%']
+        public: true
 
     maintenance.twig_extension:
         class: NDC\MaintenanceBundle\Twig\AppExtension
         arguments: ['%kernel.root_dir%']
         tags:
             - { name: twig.extension }
+        public: true
