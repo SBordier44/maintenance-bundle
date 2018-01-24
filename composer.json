@@ -29,7 +29,7 @@
     }],
     "require": {
         "php": ">=7.0",
-        "symfony/framework-bundle": ">=3.3 <4.0",
+        "symfony/framework-bundle": ">=3.3 <4.1",
         "twig/twig": "^2.4"
     },
     "autoload": {
