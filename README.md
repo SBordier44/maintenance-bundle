@@ -1,21 +1,22 @@
 # MaintenanceBundle v2
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2ed013da-a349-4147-b4d1-c142eb38d290/big.png)](https://insight.sensiolabs.com/projects/2ed013da-a349-4147-b4d1-c142eb38d290)
 
-[![License](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/license?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
-[![Total Downloads](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/downloads?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
-[![Latest Stable Version](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/v/stable?format=plastic)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+[![License](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/license?format=flat)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
+[![Latest Stable Version](https://poser.pugx.org/nuboxdevcom/maintenance-bundle/v/stable?format=flat)](https://packagist.org/packages/nuboxdevcom/maintenance-bundle)
 
 
 ## Requirements
-- PHP `>=7.1.*`
-- symfony/framework-bundle ` 4.0.*`
-- Twig `^2.*`
+- PHP `>=7.1`
+- symfony/framework-bundle `>= 3.4 || ^4.0`
+- Twig `^2.4`
+
 
 #
-## Symfony 3.x NOTE
+## :warning: Symfony before version 3.4 NOTICE
 Please use ^1.x branch versions.
 
-2.x versions is unavailable for symfony 3.x
+2.x versions is incompatible with versions lower than symfony 3.4
+
 
 #
 ## Installation:
@@ -24,6 +25,7 @@ Pretty simple with [Composer](http://packagist.org), run:
 ```console
 $ composer require nuboxdevcom/maintenance-bundle
 ```
+
 
 #
 ### Simply Configuration
@@ -38,9 +40,11 @@ ndc_maintenance:
         - 'your.ip.domain.name.example'
 ```
 
+
 #
 ### Configuration
 Symfony Flex takes care of everything!
+
 
 #
 ### How to Use
@@ -68,9 +72,10 @@ If you want to know if maintenance is enabled from a controller, use this method
 ```
 > **isMaintenanceMode()** return boolean true or false.
 
+
 #
 ### How to change the view of maintenance page
 If you want to change the view, create a new view file 
-```bash
+```console
     templates/bundles/NDCMaintenanceBundle/maintenance.html.twig
 ```
